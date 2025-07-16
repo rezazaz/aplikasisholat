@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aplikasisholat">
+
+    <!-- ======= Permissions ======= -->
+    <!-- Lokasi untuk arah kiblat -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <!-- Alarm dan notifikasi -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Untuk getLocation dan getLastKnownLocation -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- ======= Application ======= -->
+    <application
+        android:allowBackup="true"
+        android:label="Aplikasi Sholat"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aplikasisholat">
+
+        <!-- ======= MainActivity ======= -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ======= KiblatActivity ======= -->
+        <activity
+            android:name=".KiblatActivity"
+            android:exported="false" />
+
+        <!-- ======= AlarmActivity (Halaman pengaturan alarm) ======= -->
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
+
+        <!-- ======= AlarmReceiver (Untuk notifikasi adzan) ======= -->
+        <receiver
+        android:name="com.example.aplikasisholat.receiver.AlarmReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_ALARM" />
+
+        <!-- Optional: untuk mendukung notifikasi dari foreground service (jika digunakan) -->
+        <!--
+        <service
+            android:name=".YourForegroundService"
+            android:foregroundServiceType="location|mediaPlayback"
+            android:exported="false" />
+        -->
+
+    </application>
+</manifest>

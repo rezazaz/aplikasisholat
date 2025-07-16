@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Home: Beranda -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <!-- Kiblat: Penunjuk Arah -->
+    <item
+        android:id="@+id/nav_kiblat"
+        android:icon="@drawable/ic_penunjukarah"
+        android:title="Kiblat"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <!-- Info: Tentang -->
+    <item
+        android:id="@+id/nav_alarm"
+        android:icon="@drawable/ic_info"
+        android:title="Alarm"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

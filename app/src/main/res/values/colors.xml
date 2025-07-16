@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- =================== Warna Primer =================== -->
+    <color name="primary_green">#388E3C</color>
+    <color name="primary_green_dark">#2E7D32</color>
+    <color name="primary_green_light">#66BB6A</color>
+
+    <color name="primary_blue">#1976D2</color>          <!-- Utama -->
+    <color name="primary_blue_dark">#1565C0</color>     <!-- Untuk header atau status -->
+    <color name="primary_blue_light">#BBDEFB</color>
+
+    <!-- =================== Warna Aksen & Background =================== -->
+    <color name="accent">#FFC107</color>               <!-- Amber -->
+    <color name="light_green">#E8F5E9</color>          <!-- Background hijau muda -->
+    <color name="colorBackground">#F5F5F5</color>      <!-- Background netral -->
+    <color name="overlay_dark">#80000000</color>       <!-- Transparansi gelap 50% -->
+
+    <!-- =================== Warna Teks =================== -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#616161</color>
+    <color name="text_disabled">#9E9E9E</color>
+
+    <!-- =================== Transparansi =================== -->
+    <color name="white_transparent70">#B3FFFFFF</color> <!-- Putih dengan 70% opacity -->
+    <color name="black_transparent40">#66000000</color> <!-- Hitam 40% opacity -->
+
+    <!-- =================== Warna Umum =================== -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#BDBDBD</color>
+
+    <!-- =================== Warna Status / Feedback =================== -->
+    <color name="color_error">#D32F2F</color>
+    <color name="color_success">#388E3C</color>
+    <color name="color_info">#1976D2</color>
+    <color name="light_blue">#E3F2FD</color>
+    <color name="gray_text">#666666</color>
+    <color name="blue_background">#E3F2FD</color>
+
+
+</resources>
